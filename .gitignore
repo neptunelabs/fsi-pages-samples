@@ -1,0 +1,16 @@
+.idea
+*.iws
+.vscode
+.history
+.ionide
+
+package-lock.json
+yarn.lock
+
+node_modules
+dist
+fsi-layers
+jsfiddle
+.cache
+
+env.yml

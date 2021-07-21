@@ -1,0 +1,35 @@
+name: Node.js CI
+
+on: [push]
+
+env:
+  JSFIDDLE_REPO: neptunelabs/fsi-jsfiddle-samples
+
+jobs:
+
+  publish-jsfiddle:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+        registry-url: 'https://registry.npmjs.org'
+    - name: Build JSFiddle Demos
+      run: |
+        npm install
+        node ./node_modules/@neptunelabs/fsi-samples-framework/jsfiddle-builder.js
+    - name: Pushes JSFiddle files
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.JSFIDDLE_GITHUB_TOKEN }}
+      with:
+        source_file: ${{ github.event.repository.name }}
+        destination_repo: ${{ env.JSFIDDLE_REPO }}
+        user_email: 'webmaster@neptunelabs.com'
+        user_name: 'neptunelabs'
+        commit_message: 'JSFiddle commit'
+        destination_branch: 'master'
