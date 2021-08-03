@@ -5,10 +5,9 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-layers-samples/blob/main/LICENSE)
 
 
-FSI Layers renders any number of images as layers in a canvas.
+FSI Pages is a JavaScript based tool for presenting image collections as an interactive catalog, booklet or photo album on desktop computers and mobile devices. FSI Pages automatically creates a page index with thumbnails and supports hyperlinks and interactive zooming.
 The real-time scaling capabilities of the image server are used to achieve pixel-perfect results.
-All layers can be animated and blended.
-FSI Layers can be created and controlled as a simple HTML tag and/or via JavaScript API.
+FSI Pages can be created and controlled as a simple HTML tag and/or via JavaScript API.
 
 This repository contains examples on how to use and build your own applications.
 
