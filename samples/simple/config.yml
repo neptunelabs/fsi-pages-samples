@@ -1,11 +1,4 @@
 title: Simple
 image: logo.png
-description: A simple pages demonstration.
+description: A simple brochure demonstration.
 priority: 1
-jsfiddle:
-  mapping:
-    html: "index.html"
-    css: "simple.css"
-    js: "simple.js"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/pages/js/fsipages.js"

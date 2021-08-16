@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>FSI Pages  Demo</title>
+  <title>FSI Pages Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link rel="stylesheet" href='simple.css' type="text/css"/>
   <script src='simple.js'></script>
-  <script src='{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/pages/js/fsipages.js'></script>
+  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"></script>
+  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/pages/js/fsipages.js"></script>
 </head>
 <body>
-<div class="flex-container">
-  <fsi-pages
-    id="fsi-pages-1627918935602-409073"
-    dir="images/samples/pages/digital_niche/July"
-    width="100%"
-    height="100%"
-    pageLayout="flip"
-    listTemplate="image_list"
-    plugins="resize,fullScreen"
-    skin="white"
-    idleAutoTurn="true"
-  >
+<div class="container">
+  <fsi-pages IdleAutoTurn="true" id="myPages" width="100%" height="850px" dir="/images/samples/pages/digital_niche/July/" debug="0"  plugins="fullscreen,pagesthumbbar,chapters,bookmarks" chapters_indexdatafile="/samples/pages_chapters.xml" PageLayout="flip" linkRGBANormal="58a8ff99" linkRGBAHover="58a8ff99" linkRGBAActive="58a8ff99" followLinks="false" skin="white" bendEffect="glossy" initialPage="0" OnePageInView="true" VerticalLayout="false" links="true" PageNumbers="false" pagesthumbbar_autohide="false" pagesthumbbar_height="100" chapters_width="300" useDevicePixelRatio="true" imageserver="//fsi-site.neptunelabs.com/fsi/server">
+    <fsi-pages-intro-content>
+      <div align=center><br/><br/>
+        <h3><br/><br/>How to use the catalog</h3><br/><br/>
+        <ul>
+          <li>Swipe left or right to turn pages<br/><br/></li>
+          <li>Double tap to zoom in<br/><br/></li>
+          <li>Click on a marked item to open the link<br/><br/></li>
+          <li>Bookmark a page with the corresponding icon<br/><br/></li>
+          <li>Scroll with the page thumbbar below for quick access</li>
+        </ul>
+      </div>
+    </fsi-pages-intro-content>
   </fsi-pages>
+
 </div>
 </body>
 </html>
