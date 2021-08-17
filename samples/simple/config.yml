@@ -2,3 +2,7 @@ title: Simple
 image: logo.png
 description: A simple brochure demonstration.
 priority: 1
+acts:
+  - JS built FSI Pages
+  - interactive brochure
+  - pages move automatically while idle
