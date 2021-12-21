@@ -1,7 +1,7 @@
 title: Catalogue Overview (Modal)
 image: logo.png
 description: Shows how a simple catalogue overview page with an integrated modal could look.
-priority: 6
+priority: 7
 facts:
   - JS built FSI Pages
   - modal implementation
