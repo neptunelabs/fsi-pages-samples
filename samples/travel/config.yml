@@ -2,15 +2,15 @@ title: Travel Guide (Chapters)
 image: logo.png
 description: Shows how a travel guide with chapters could look.
 priority: 6
-acts:
+facts:
   - JS built FSI Pages
   - interactive catalog
   - including chapters
 jsfiddle:
   mapping:
     html: "index.html"
-    css: "pdp.css"
-    js: "pdp.js"
+    css: "travel.css"
+    js: "travel.js"
   resources:
     - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/pages/js/fsipages.js"
     - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css

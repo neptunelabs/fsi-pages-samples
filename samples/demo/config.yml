@@ -2,7 +2,7 @@ title: Demo View
 image: logo.png
 description: Shows how a product catalog page could look with Pages implemented in demo mode.
 priority: 4
-acts:
+facts:
   - JS built FSI Pages
   - interactive catalog
   - including hyperlinks to articles

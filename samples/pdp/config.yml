@@ -2,7 +2,7 @@ title: Product Catalog Page
 image: logo.png
 description: Shows how a product catalog page could look.
 priority: 3
-acts:
+facts:
   - JS built FSI Pages
   - interactive catalog
   - including hyperlinks to articles
