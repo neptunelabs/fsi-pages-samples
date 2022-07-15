@@ -1,42 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en-US">
 <head>
-  <meta charset="utf-8"/>
-  <title>FSI Layers Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href="starter.css" type="text/css"/>
-  <script src="starter.js"></script>
-  <script src='{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/layers/js/fsilayers.js'></script>
+  <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="UTF-8">
+  <title>Your FSI Code</title>
+  <style type="text/css">
+    html,body{
+      font-family:Arial,sans-serif;
+      width:100%;height:100%;
+      margin:0;
+      padding:0;
+    }
+    body.pages-flip{
+      overflow:hidden;
+    }
+  </style>
+  <script src="{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/pages/js/fsipages.js"></script>
 </head>
 <body>
-<div class="flex-container">
-  <fsi-layers id="myFSILayers" useDevicePixelRatio="true" debug="1" onReady="ready">
-    <fsi-layer-group name="background" width="80%" height="80%">
-      <fsi-layer-group name="all" width="600" height="600">
-        <fsi-layer
-          name="rect"
-          width="60%"
-          height="60%"
-          opacity="0.5"
-          hidden="0"
-          src="{{{sources.images}}}/starter/rect.png"
-        >
-        </fsi-layer>
-        <fsi-layer
-          name="circle"
-          width="20%"
-          height="20%"
-          top="10%"
-          left="10%"
-          opacity="0.5"
-          hidden="0"
-          src="{{{sources.images}}}/starter/circle.png"
-        >
-        </fsi-layer>
-      </fsi-layer-group>
-    </fsi-layer-group>
-  </fsi-layers>
-</div>
+<fsi-pages
+  id="fsi-pages-1657897071045-1697808"
+  dir="images/samples/pages/starter"
+  width="80%"
+  height="80%"
+  pageLayout="flip"
+  listTemplate="image_list"
+  plugins="resize,fullScreen"
+  skin="white"
+>
+</fsi-pages>
 </body>
 </html>
