@@ -24,7 +24,7 @@ Depending on the type of the selected source connector, you can upload different
 - Choose the Upload tab, click the "Choose files" button to add files to upload to the list. The files will be uploaded to the current folder.
 - Drag & Drop files to the file view or the tree view
 
-# Add a static image to website - modal on click
+# Add a static image as thumbnail to website - modal on click
 
 Next, we will add an image which will open a modal on click. Please keep in mind we are using the Bootstrap modal technique.
 
@@ -87,7 +87,7 @@ to the head of your website:
 
 ```html
 <script
-  src='https://docs.neptunelabs.com/nelabs.com/fsi/viewer/applications/pages/js/fsipages.js'
+  src='https://docs.neptunelabs.com/fsi/viewer/applications/pages/js/fsipages.js'
 </script>
 ```
 This ensures that FSI Pages is loaded.
