@@ -2,3 +2,8 @@ title: Starter
 image: logo.png
 description: Start your own demo
 priority: 99
+jsfiddle:
+  mapping:
+    html: "index.html"
+  resources:
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/pages/js/fsipages.js"
