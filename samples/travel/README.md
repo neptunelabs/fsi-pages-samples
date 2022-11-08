@@ -1,40 +1,8 @@
 # Using FSI Pages for Catalogs - with chapters
 
 This readme describes how the detail page sample with *FSI Pages* with chapters is achieved.
-The aim of the demo is to show how you can easily integrate images as a catalog by just adding
-a simple viewer tag.
-
-# Add your images/ assets to FSI Server
-
-First, you'll need to upload the images you want to use to FSI Server.
-You can install a [demo version](https://www.neptunelabs.com/get/) via Docker or use our [online demo server](https://demo.fsi-server.com/fsi/interface/) to try it out first.
-
-It's important to use the correct source connector for your images:
-
-- *Storage*: images will be imported to the storage for high performance Single Source Imaging
-- *Static*: for static files only, e.g. style graphics you want to use on your website
-
-# Uploading images
-
-Depending on the type of the selected source connector, you can upload different types of files. There are several possibilities to upload images into the interface.
-
-![Config Image](readme-pages1.png)
-
-- Choose the Upload tab, click the "Choose files" button to add files to upload to the list. The files will be uploaded to the current folder.
-- Drag & Drop files to the file view or the tree view
-
-# Use catalogs on the website
-
-While having an image or a folder selected, you can see all possible publishing ways for the specific item by visting the Publish To Web tab.
-For this example, select the preset *Catalog with flip layout* in the section *E-Books/ E-Catalogs*:
-
-![Config Image](readme-pages-1.png)
-
-The *Source Code* section enables you to control the look of your viewer by setting the dimensions and format, as well as adding effects, different parameters or crop options to it.
-In this area you also can see the source code for your selected publishing option which you can edit and copy to publish the viewer.
-You also see the required scripts which need to be embedded on the site.
-
-![Config Image](readme-pages-2.png)
+Adding the parameter `plugins:"Chapters"` adds a select box to the user interface of FSI Pages.
+The user can directly access sections of a catalog by selecting the corresponding item in the select box.
 
 In order to display catalogs with FSI Pages, you only need to add the corresponding script
 to the head of your website:
@@ -46,32 +14,55 @@ to the head of your website:
 ```
 This ensures that FSI Pages is loaded.
 
-Afterwards, you need to place the *<fsi-pages>* tag you see in the Publish section in the modal body.
+Afterwards, you need to place the `<fsi-pages>` tag in the body.
 In our example this will look like this:
 
 ```html
-<fsi-pages
-  id="fsi-pages-1629127147793-9455915"
-  dir="images/samples/pages/product"
-  width="100%"
-  height="600px"
-  pageLayout="flip"
-  skin="example"
-  listTemplate="catalog_list"
-  plugins="resize,fullScreen"
+ <fsi-pages
+  id='fsi-pages-1629127147793-9455915'
+  dir='images/samples/pages/travel'
+  width='100%'
+  height='600px'
+  pageLayout='flip'
+  skin='white'
+  listTemplate='catalog_list'
+  plugins='resize,fullScreen,chapters'
 >
 </fsi-pages>
 ```
 
 ## Chapters
 
-For this demo, we've added hyperlinks to the catalog. You can see them while hovering over the marked areas:
+For this demo, we've added chapters to the catalog. You can see them by clicking on the **Table Of Contents** button in the menu bar:
 
-![Config Image](readme-pages.png)
+![Config Image](readme-chapters.png)
 
-You can add those links by using the hyperlink editor of FSI Server.
+They are added by activating the plugin by adding it as a plugin parameter: `plugins='resize,fullScreen,chapters'`
+and by adding the following to the `<fsi-pages>` tag:
 
-For an in-depth explanation on how it works, please visit [the tutorial "How to use the Hyperlink Editor"](https://www.neptunelabs.com/fsi-pages-js/how-to-use-the-hyperlink-editor/).
+```html
+<!-- the code below provides the data for the "chapters" plug-in -->
+  <fsi-pages-chapters style='display:none'>
+    <chapter page='1'>Cover</chapter>
+    <chapter page='2'>
+      New Zealand
+      <chapter page='2'>Mangaotaki Valley</chapter>
+      <chapter page='3'>Sutherland Falls</chapter>
+      <chapter page='4'>Fjordland National Park</chapter>
+      <chapter page='5'>O'Neill Bay</chapter>
+    </chapter>
+    <chapter page='6'>
+      Switzerland
+      <chapter page='6'>Monte Tamaro</chapter>
+      <chapter page='7'>Monte Rosa</chapter>
+      <chapter page='8'>Matterhorn</chapter>
+      <chapter page='9'>Zermatt</chapter>
+      <chapter page='10'>Oberhofen Castle</chapter>
+      <chapter page='11'>Lucerne</chapter>
+    </chapter>
+
+  </fsi-pages-chapters>
+```
 
 For all parameters which can be used, please consult the [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-pages).
 
