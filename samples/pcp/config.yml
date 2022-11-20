@@ -1,28 +1,28 @@
 overview:
-  title: Travel Guide (Chapters)
+  title: Product Catalog Page
   image: logo.png
-  description: Shows how a travel guide with chapters could look.
-  order: 2
+  description: Shows how a product catalog page could look.
+  order: 1
   facts:
     - JS built FSI Pages
     - interactive catalog
-    - including chapters
+    - including hyperlinks to articles
 sample:
   template:
     schema: framework-furniture.html
     components:
       menu: true
       hero: false
-      featured: false
+      featured: true
       footer: true
       files:
-        main: travel.html
+        main: pcp.html
       fsi:
         pages: true
       bootstrap:
         icons: true
   mapping:
-    js: 'travel.js'
-    css: 'travel.css'
+    js: 'pcp.js'
+    css: 'pcp.css'
 jsfiddle:
   deploy: true

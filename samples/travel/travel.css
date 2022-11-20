@@ -1,9 +1,10 @@
 .bg-image {
-  background-image: url("{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/grid/background/cesar-couto-GvL_0uNFfK4-unsplash.jpg&width=1920");
+  background: rgb(123,135,147);
+  background: linear-gradient(180deg, rgba(123,135,147,1) 0%, rgba(149,129,127,1) 60%, rgba(106,99,113,1) 85%, rgba(82,96,107,1) 100%);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 100% 100%;
-  margin-left: 0px !important;
+  margin-left: 0 !important;
 }
 
 .content {

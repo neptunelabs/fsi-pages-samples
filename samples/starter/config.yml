@@ -1,9 +1,12 @@
-title: Starter
-image: logo.png
-description: Start your own demo
-priority: 99
-jsfiddle:
+overview:
+  title: Starter
+  image: logo.png
+  description: Start your own demo
+  order: 99
+sample:
   mapping:
-    html: "index.html"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/pages/js/fsipages.js"
+    html: 'index.html'
+    js: 'starter.js'
+    css: 'starter.css'
+jsfiddle:
+  deploy: false
