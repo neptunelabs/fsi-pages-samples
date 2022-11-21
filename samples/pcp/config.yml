@@ -18,6 +18,7 @@ sample:
       fsi:
         pages: true
       bootstrap:
+        icons: false
   mapping:
     html: 'pcp.html'
     js: 'pcp.js'

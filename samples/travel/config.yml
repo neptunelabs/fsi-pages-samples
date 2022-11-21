@@ -16,6 +16,7 @@ sample:
       fsi:
         pages: true
       bootstrap:
+        icons: false
   mapping:
     html: 'travel.html'
     js: 'travel.js'

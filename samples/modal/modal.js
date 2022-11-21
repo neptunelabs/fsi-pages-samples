@@ -22,3 +22,4 @@ function changeImage(buttonID) {
   curImage.src = img
   document.getElementsByTagName('fsi-viewer')[0].changeConfig(undefined, { imagesrc: src })
 }
+/*XX1*/
