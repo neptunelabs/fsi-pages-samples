@@ -15,6 +15,7 @@ sample:
       featured: true
       categories: true
       footer: true
+      hero: true
       fsi:
         pages: true
       bootstrap:
