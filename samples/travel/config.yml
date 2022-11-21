@@ -9,19 +9,15 @@ overview:
     - including chapters
 sample:
   template:
-    schema: framework-furniture.html
+    schema: framework-furniture
     components:
       menu: true
-      hero: false
-      featured: false
       footer: true
-      files:
-        main: travel.html
       fsi:
         pages: true
       bootstrap:
-        icons: true
   mapping:
+    html: 'travel.html'
     js: 'travel.js'
     css: 'travel.css'
 jsfiddle:

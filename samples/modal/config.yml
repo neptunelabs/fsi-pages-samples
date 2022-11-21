@@ -9,21 +9,18 @@ overview:
     - simple catalogues
 sample:
   template:
-    schema: framework-furniture.html
+    schema: framework-furniture
     components:
       menu: true
-      hero: true
       featured: true
       categories: true
       footer: true
-      files:
-        main: modal.html
       fsi:
         pages: true
-        touchZoom: true
       bootstrap:
         icons: true
   mapping:
+    html: 'modal.html'
     js: 'modal.js'
     css: 'modal.css'
 jsfiddle:

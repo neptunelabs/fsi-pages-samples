@@ -9,19 +9,17 @@ overview:
     - including hyperlinks to articles
 sample:
   template:
-    schema: framework-furniture.html
+    schema: framework-furniture
     components:
       menu: true
       hero: false
       featured: true
       footer: true
-      files:
-        main: pcp.html
       fsi:
         pages: true
       bootstrap:
-        icons: true
   mapping:
+    html: 'pcp.html'
     js: 'pcp.js'
     css: 'pcp.css'
 jsfiddle:
