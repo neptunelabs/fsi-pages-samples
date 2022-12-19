@@ -12,6 +12,7 @@ sample:
     schema: framework-furniture
     components:
       menu: true
+      highlight: HIGHLIGHT OF THE DAY
       featured: true
       categories: true
       footer: true
