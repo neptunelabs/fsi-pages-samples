@@ -9,9 +9,19 @@ overview:
     - including hyperlinks to articles
 sample:
   template:
-    schema: framework-furniture
+    schema: framework-2023
     components:
-      menu: true
+      menu:
+        logo:
+          url: /static/assets/samples/ssi/logo-furniture-gre.svg
+          height: 24
+        nav:
+          - SHOP
+          - COLLECTION
+          - DECORATION
+          - KITCHEN
+          - BEDS
+          - BATHROOM
       hero: false
       featured: true
       footer: true

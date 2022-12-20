@@ -9,14 +9,17 @@ overview:
     - simple catalogues
 sample:
   template:
-    schema: framework-furniture
+    schema: framework-2023
     components:
-      menu: true
+      menu:
+        template: data/furniture-menu.yml
       highlight: HIGHLIGHT OF THE DAY
-      featured: true
+      featured:
+        template: data/furniture-featured.yml
       categories: true
       footer: true
-      hero: true
+      hero:
+        template: data/furniture-hero.yml
       fsi:
         pages: true
       bootstrap:
