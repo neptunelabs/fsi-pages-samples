@@ -1,11 +1,10 @@
 # Using FSI Pages for Catalogs - with chapters
 
-This readme describes how the detail page sample with *FSI Pages* with chapters is achieved.
+This readme describes how to achieve the detail page example with *FSI Pages* with chapters.
 Adding the parameter `plugins:"Chapters"` adds a select box to the user interface of FSI Pages.
-The user can directly access sections of a catalog by selecting the corresponding item in the select box.
+The user can directly access chapters of a catalogue by selecting the corresponding item in the select box.
 
-In order to display catalogs with FSI Pages, you only need to add the corresponding script
-to the head of your website:
+To display catalogues with FSI Pages, all you need to do is add the following script to the head of your website:
 
 ```html
 <script
@@ -14,7 +13,7 @@ to the head of your website:
 ```
 This ensures that FSI Pages is loaded.
 
-Afterwards, you need to place the `<fsi-pages>` tag in the body.
+Then you need to place the `<fsi-pages>` tag in the body.
 In our example this will look like this:
 
 ```html
@@ -33,12 +32,11 @@ In our example this will look like this:
 
 ## Chapters
 
-For this demo, we've added chapters to the catalog. You can see them by clicking on the **Table Of Contents** button in the menu bar:
+For this demo, we've added chapters to the catalogue. You can view them by clicking on the **Table of Contents** button in the menu bar:
 
 ![Config Image](readme-chapters.png)
 
-They are added by activating the plugin by adding it as a plugin parameter: `plugins='resize,fullScreen,chapters'`
-and by adding the following to the `<fsi-pages>` tag:
+They are added by enabling the plugin by adding it as a plugin parameter: `plugins='resize,fullScreen,chapters'` and adding the following to the `<fsi-pages>` tag:
 
 ```html
 <!-- the code below provides the data for the "chapters" plug-in -->
@@ -64,7 +62,7 @@ and by adding the following to the `<fsi-pages>` tag:
   </fsi-pages-chapters>
 ```
 
-For all parameters which can be used, please consult the [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-pages).
+For all parameters which can be used, please refer to the [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-pages).
 
 ## Testing with examples from your own server
 

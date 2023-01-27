@@ -18,8 +18,6 @@ sample:
         template: data/furniture-featured.yml
       categories: true
       footer: true
-      hero:
-        template: data/furniture-hero.yml
       fsi:
         pages: true
       bootstrap:

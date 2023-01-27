@@ -1,10 +1,10 @@
 # Using FSI Pages for Catalogs - with hyperlinks
 
-This readme describes how the detail page sample with *FSI Pages* with hyperlinks displaying is achieved.
-The aim of the demo is to show how you can easily integrate images as a catalog by just adding a simple viewer tag.
+This readme describes how to achieve the detail page example with *FSI Pages* displaying hyperlinks.
+The aim of the demo is to show how you can easily integrate images as a catalogue by adding a simple viewer tag.
 
-In order to display catalogs with FSI Pages, you only need to add the corresponding script
-to the head of your website:
+To display catalogues with FSI Pages, all you need to do is add the following script
+to the head of your page:
 
 ```html
 <script
@@ -13,7 +13,7 @@ to the head of your website:
 ```
 This ensures that FSI Pages is loaded.
 
-Afterwards, you need to place the `<fsi-pages>` tag in the body.
+Then you need to place the `<fsi-pages>` tag in the body.
 In our example this will look like this:
 
 ```html
@@ -32,13 +32,13 @@ In our example this will look like this:
 
 ## Hyperlinks
 
-For this demo, we've added hyperlinks to the catalog. You can see them while hovering over the marked areas:
+For this demo, we've added hyperlinks to the catalogue. You can see them by hovering over the marked areas:
 
 ![Config Image](readme-pages.png)
 
-You can add those links by using the hyperlink editor of FSI Server.
+You can add these links using FSI Server's hyperlink editor.
 
-For an in-depth explanation on how it works, please visit [the tutorial "How to use the Hyperlink Editor"](https://www.neptunelabs.com/fsi-pages-js/how-to-use-the-hyperlink-editor/).
+For a detailed explanation of how this works, please visit [the tutorial "How to use the Hyperlink Editor"](https://www.neptunelabs.com/fsi-pages-js/how-to-use-the-hyperlink-editor/).
 
 For all parameters which can be used, please consult the [manual](https://docs.neptunelabs.com/fsi-viewer/latest/fsi-pages).
 
