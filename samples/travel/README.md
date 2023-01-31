@@ -1,20 +1,20 @@
 # Using FSI Pages for Catalogs - with chapters
 
-This readme describes how to achieve the detail page example with *FSI Pages* with chapters.
+This readme describes how to achieve the detail page example using *FSI Pages* with chapters.
 Adding the parameter `plugins:"Chapters"` adds a select box to the user interface of FSI Pages.
 The user can directly access chapters of a catalogue by selecting the corresponding item in the select box.
 
-To display catalogues with FSI Pages, all you need to do is add the following script to the head of your website:
+To display catalogues with FSI Pages, simply add the following script to the head of your website:
 
 ```html
 <script
   src='https://docs.neptunelabs.com/fsi/viewer/applications/pages/js/fsipages.js'
 </script>
 ```
-This ensures that FSI Pages is loaded.
+This will ensure that FSI Pages is loaded.
 
 Then you need to place the `<fsi-pages>` tag in the body.
-In our example this will look like this:
+In our example this looks like this:
 
 ```html
  <fsi-pages
@@ -31,8 +31,7 @@ In our example this will look like this:
 ```
 
 ## Chapters
-
-For this demo, we've added chapters to the catalogue. You can view them by clicking on the **Table of Contents** button in the menu bar:
+We've added chapters to the catalogue for this demo. You can view them by clicking on the **Table of Contents** button in the menu bar:
 
 ![Config Image](readme-chapters.png)
 
