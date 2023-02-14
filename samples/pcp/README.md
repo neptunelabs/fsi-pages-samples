@@ -1,6 +1,6 @@
 # Using FSI Pages for Catalogs - with hyperlinks
 
-This readme describes how to achieve the detail page example with *FSI Pages* displaying hyperlinks.
+This readme describes how to achieve the detail page example with _FSI Pages_ displaying hyperlinks.
 The aim of the demo is to show how you can easily integrate images as a catalogue by adding a simple viewer tag.
 
 To display catalogues with FSI Pages, all you need to do is add the following script
@@ -11,13 +11,14 @@ to the head of your page:
   src='https://docs.neptunelabs.com/fsi/viewer/applications/pages/js/fsipages.js'
 </script>
 ```
+
 This ensures that FSI Pages is loaded.
 
 Then you need to place the `<fsi-pages>` tag in the body.
 In our example this will look like this:
 
 ```html
-      <fsi-pages
+<fsi-pages
   id="fsi-pages-1629127147793-9455915"
   dir="images/samples/pages/product"
   width="100%"
