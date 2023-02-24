@@ -21,7 +21,7 @@
     "NeptuneLabs"
   ],
   "devDependencies": {
-    "@neptunelabs/fsi-samples-framework": "file:../fsi-samples-framework",
+    "@neptunelabs/fsi-samples-framework": "file:../1.0.2-dev",
     "prettier": "^2.8.1"
   },
   "scripts": {
