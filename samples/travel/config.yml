@@ -1,7 +1,7 @@
 overview:
   title: Travel Guide (Chapters)
   image: logo.png
-  description: Shows how a travel guide with chapters could look.
+  description: Shows how a travel guide with chapters looks.
   order: 2
   facts:
     - JS built FSI Pages

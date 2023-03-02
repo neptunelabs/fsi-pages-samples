@@ -1,7 +1,7 @@
 overview:
   title: Product Catalog Page
   image: logo.png
-  description: Shows how a product catalog page could look.
+  description: Shows how a product catalog page looks.
   order: 1
   facts:
     - JS built FSI Pages

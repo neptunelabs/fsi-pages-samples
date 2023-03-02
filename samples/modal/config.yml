@@ -1,7 +1,7 @@
 overview:
   title: Preview and Modal
   image: logo.png
-  description: Shows how a simple catalogue overview page with an integrated modal could look.
+  description: Shows how a simple catalogue overview page with an integrated modal looks.
   order: 3
   facts:
     - JS built FSI Pages
