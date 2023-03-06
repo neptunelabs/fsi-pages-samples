@@ -1,17 +1,34 @@
-title: Travel Guide (Chapters)
-image: logo.png
-description: Shows how a travel guide with chapters could look.
-priority: 6
-facts:
-  - JS built FSI Pages
-  - interactive catalog
-  - including chapters
-jsfiddle:
+overview:
+  title: Travel Guide (Chapters)
+  image: logo.png
+  description: Shows how a travel guide with chapters looks.
+  order: 2
+  facts:
+    - JS built FSI Pages
+    - interactive catalog
+    - including chapters
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        logo:
+          url: /static/assets/samples/ssi/logo-misc-gre.svg
+          height: 24
+        nav:
+          - ASIA
+          - AMERICA
+          - AFRICA
+          - PACIFIC
+          - EUROPE
+      footer: true
+      fsi:
+        pages: true
+      bootstrap:
+        icons: false
   mapping:
-    html: "index.html"
-    css: "travel.css"
-    js: "travel.js"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/pages/js/fsipages.js"
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js
+    html: 'travel.html'
+    js: 'travel.js'
+    css: 'travel.css'
+jsfiddle:
+  deploy: true

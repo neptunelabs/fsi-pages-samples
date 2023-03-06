@@ -1,30 +1,28 @@
 overview:
-  title: Preview and Modal
+  title: Product Catalog Page
   image: logo.png
-  description: Shows how a simple catalogue overview page with an integrated modal looks.
-  order: 3
+  description: Shows how a product catalog page looks.
+  order: 1
   facts:
     - JS built FSI Pages
-    - modal implementation
-    - simple catalogues
+    - interactive catalog
+    - including hyperlinks to articles
 sample:
   template:
     schema: framework-2023
     components:
       menu:
         template: data/furniture-menu.yml
-      highlight: HIGHLIGHT OF THE DAY
       featured:
         template: data/furniture-featured.yml
-      categories: true
       footer: true
       fsi:
         pages: true
       bootstrap:
-        icons: true
+        icons: false
   mapping:
-    html: 'modal.html'
-    js: 'modal.js'
-    css: 'modal.css'
+    html: 'pcp.html'
+    js: 'pcp.js'
+    css: 'pcp.css'
 jsfiddle:
   deploy: true

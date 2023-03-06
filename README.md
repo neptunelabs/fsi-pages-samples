@@ -5,11 +5,11 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-layers-samples/blob/main/LICENSE)
 
 
-FSI Pages is a JavaScript based tool for presenting image collections as an interactive catalog, booklet or photo album on desktop computers and mobile devices. FSI Pages automatically creates a page index with thumbnails and supports hyperlinks and interactive zooming.
+FSI Pages is a JavaScript-based tool for presenting image collections as an interactive catalogue, booklet or photo album on desktop computers and mobile devices. FSI Pages automatically creates a page index with thumbnails and supports hyperlinks and interactive zooming.
 The real-time scaling capabilities of the image server are used to achieve pixel-perfect results.
-FSI Pages can be created and controlled as a simple HTML tag and/or via JavaScript API.
+FSI Pages can be created and controlled as a simple HTML tag and/or via the JavaScript API.
 
-This repository contains examples on how to use and build your own applications.
+This repository contains examples of how to use and build your own applications.
 
 ![Project Image](project.gif)
 
@@ -18,19 +18,15 @@ This repository contains examples on how to use and build your own applications.
 Without starting this project in your IDE, you can discover, develop and customize
 all demos in JSFiddle.
 
-[Flowers in JSFiddle][flowjsf]
+[Product Catalog Page in JSFiddle][catpagejsf]
 
-[Trains in JSFiddle][trainsjsf]
+[Travel Guide (Chapters) in JSFiddle][chaptersjsf]
 
-[Kitchen in JSFiddle][kitchenjsf]
+[Preview and Modal in JSFiddle][pagesmodaljsf]
 
-[Product Detail Page in JSFiddle][pdpjsf]
-
-[flowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/flowers
-[kitchenjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/kitchen
-[pdpjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/pdp
-[trainsjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/trains
-
+[catpagejsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-pages-samples/pcp
+[chaptersjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-pages-samples/travel
+[pagesmodaljsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-pages-samples/modal
 ## Start and develop
 
 To run and modify this samples:
@@ -73,9 +69,9 @@ change the settings.
 
 ## Documentation
 
-Official JS API Docs can be found here: [https://docs.neptunelabs.com/fsi-viewer/latest/fsi-layers][Docs]
+Official JS API Docs can be found here: [https://docs.neptunelabs.com/fsi-viewer/latest/fsi-pages][Docs]
 
-[Docs]: https://docs.neptunelabs.com/fsi-viewer/latest/fsi-layers
+[Docs]: https://docs.neptunelabs.com/fsi-viewer/latest/fsi-pages
 [Server]: https://www.neptunelabs.com/get/
 [Grunt]: https://gruntjs.com/
 [Browsersync]: https://browsersync.io/

@@ -1,87 +1,10 @@
 .bg-image {
-  background-image: url("{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/grid/background/cesar-couto-GvL_0uNFfK4-unsplash.jpg&width=1920");
+  background: rgb(123,135,147);
+  background: linear-gradient(180deg, rgba(123,135,147,1) 0%, rgba(149,129,127,1) 60%, rgba(106,99,113,1) 85%, rgba(82,96,107,1) 100%);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 100% 100%;
-  margin-left: 0px !important;
-}
-
-.content {
-  max-width: 1536px;
-}
-
-.container {
-  max-width: 960px;
-}
-
-.thumbnail {
-  cursor: pointer;
-}
-
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-
-.footer {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  color: #fff;
-}
-
-.site-header a {
-  color: #fff;
-  padding: 10px;
-  transition: color .15s ease-in-out;
-  text-decoration: none;
-}
-
-.site-header a:hover {
-  color: #fff;
-  background-color: #91B595;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.btn-outline-secondary {
-  color: #000 !important;
-  border-color: #000 !important;
-}
-
-.btn-outline-secondary:hover {
-  color: #fff !important;
-  border-color: #fff !important;
-  background-color: #91B595 !important;
-}
-
-.credit {
-  font-size: x-small;
-  color: #666666;
-  text-align: left;
-  padding-right: 10px;
-}
-
-.product-heading {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.product-price {
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-align: left;
-}
-
-
-.product-text {
-  font-size: 0.8rem;
-}
-
-.pdp-text {
-  z-index: 1020;
-  position: sticky;
+  margin-left: 0 !important;
 }
 
 .flex-equal > * {
