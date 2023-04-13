@@ -6,7 +6,7 @@ overview:
 sample:
   mapping:
     html: 'index.html'
-    js: 'starter.js'
-    css: 'starter.css'
+    js: 'script.js'
+    css: 'style.css'
 jsfiddle:
   deploy: false
