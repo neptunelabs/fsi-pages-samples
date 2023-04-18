@@ -27,8 +27,8 @@ sample:
       bootstrap:
         icons: false
   mapping:
-    html: 'travel.html'
-    js: 'travel.js'
-    css: 'travel.css'
+    html: 'index.html'
+    js: 'script.js'
+    css: 'style.css'
 jsfiddle:
   deploy: true
