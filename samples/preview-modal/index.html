@@ -5,7 +5,7 @@
         alt=""
         class="img-fluid"
         id="image"
-        src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=940"
+        src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=940"
         width="940"
       />
     </div>
@@ -39,7 +39,7 @@
             data-bs-toggle="modal"
             class="fsi-code"
             height="250"
-            dir="images/samples/pages/product"
+            dir="{{&sources.images}}/product"
             cfg="pages_presets/catalog_links.xml"
             PageLayout="flip"
             hideuiindemomode="true"
@@ -73,7 +73,7 @@
       </div>
       <div class="modal-body">
         <fsi-pages
-          dir="images/samples/pages/product"
+          dir="{{&sources.images}}/product"
           height="600px"
           id="fsi-pages-1629127147793-9455915"
           listTemplate="catalog_list"
