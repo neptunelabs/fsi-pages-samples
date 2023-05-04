@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "NeptuneLabs GmbH",
+    "url": "https://www.neptunelabs.com/"
+  },
+  "version": "23.05.04",
+  "homepage": "https://www.neptunelabs.com/fsi-pages",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neptunelabs/fsi-pages-samples"
+  },
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@neptunelabs/fsi-samples-framework": "^1.0.12-dev",
+    "prettier": "^2.8.8"
+  },
+  "scripts": {
+    "start": "start-sample",
+    "build": "start-sample --build"
+  }
+}

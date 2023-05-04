@@ -1,0 +1,28 @@
+overview:
+  title: Product Catalog Page
+  image: logo.png
+  description: Shows how a product catalog page looks.
+  order: 1
+  facts:
+    - JS built FSI Pages
+    - interactive catalog
+    - including hyperlinks to articles
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      featured:
+        template: data/furniture-featured.yml
+      footer: true
+      fsi:
+        pages: true
+      bootstrap:
+        icons: false
+  mapping:
+    html: 'index.html'
+    js: 'script.js'
+    css: 'style.css'
+playground:
+  deploy: true

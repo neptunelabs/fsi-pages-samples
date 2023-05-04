@@ -1,0 +1,14 @@
+.idea
+*.iws
+.vscode
+.history
+.ionide
+
+package-lock.json
+yarn.lock
+
+node_modules
+dist
+.cache
+
+env.yml

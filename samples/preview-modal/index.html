@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col-sm-7 px-0">
+      <img
+        alt=""
+        class="img-fluid"
+        id="image"
+        src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=940"
+        width="940"
+      />
+    </div>
+    <div class="col-sm-5 mx-auto">
+      <div class="p-3 text-left">
+        <h2 class="display-5">Harley</h2>
+        <p>Sideboard, Distressed Oak Effect</p>
+        <p>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+          <small>(4664) Ratings</small>
+        </p>
+        <p>Sturdy, classy and reliable.</p>
+        <p>
+          Guaranteed to make you living room look clean and holds all the things you do not want to have out in the
+          open.
+        </p>
+        <p>
+          <small>Dispatched in 4 working days</small>
+        </p>
+        <div class="btn-group py-3">
+          <button class="btn btn-lg btn-outline-secondary" type="button">Add to basket</button>
+        </div>
+        <div class="row pb-3">
+          <h3>Browse through our catalog:</h3>
+          <fsi-pages
+            data-bs-target="#exampleModal"
+            data-bs-toggle="modal"
+            class="fsi-code"
+            height="250"
+            dir="{{&sources.images}}/product"
+            cfg="pages_presets/catalog_links.xml"
+            PageLayout="flip"
+            hideuiindemomode="true"
+            demoURL="#"
+            DemoURLTarget="_self"
+            idleautoturn="true"
+            pageLayout="flip"
+            skin="example"
+            listTemplate="catalog_list"
+            plugins="resize,fullScreen"
+          >
+          </fsi-pages>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  aria-hidden="true"
+  aria-labelledby="myExtraLargeModalLabel"
+  class="modal fade bd-example-modal-xl"
+  id="exampleModal"
+  role="dialog"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+      </div>
+      <div class="modal-body">
+        <fsi-pages
+          dir="{{&sources.images}}/product"
+          height="600px"
+          id="fsi-pages-1629127147793-9455915"
+          listTemplate="catalog_list"
+          pageLayout="flip"
+          plugins="resize,fullScreen"
+          skin="example"
+          width="100%"
+        ></fsi-pages>
+      </div>
+    </div>
+  </div>
+</div>

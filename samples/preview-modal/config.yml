@@ -1,0 +1,30 @@
+overview:
+  title: Preview and Modal
+  image: logo.png
+  description: Shows how a simple catalogue overview page with an integrated modal looks.
+  order: 3
+  facts:
+    - JS built FSI Pages
+    - modal implementation
+    - simple catalogues
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      highlight: HIGHLIGHT OF THE DAY
+      featured:
+        template: data/furniture-featured.yml
+      categories: true
+      footer: true
+      fsi:
+        pages: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: 'index.html'
+    js: 'script.js'
+    css: 'style.css'
+playground:
+  deploy: true

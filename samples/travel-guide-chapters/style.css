@@ -1,0 +1,40 @@
+.bg-image {
+  background: rgb(123,135,147);
+  background: linear-gradient(180deg, rgba(123,135,147,1) 0%, rgba(149,129,127,1) 60%, rgba(106,99,113,1) 85%, rgba(82,96,107,1) 100%);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 100% 100%;
+  margin-left: 0 !important;
+}
+
+.flex-equal > * {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+.fsi-skin-example .fsi-pages-linkcontainer-interactive .fsi-pages-link.fsi-pages-link-auto-color,
+.fsi-skin-example .fsi-pages-linkcontainer-interactive .fsi-pages-link.fsi-pages-link-auto-color {
+  stroke: #33b1aa;
+}
+
+.fsi-skin-example .fsi-pages-linkcontainer-interactive .fsi-pages-link.fsi-pages-link-auto-color.hover,
+.fsi-skin-example .fsi-pages-linkcontainer-interactive .fsi-pages-link.fsi-pages-link-auto-color.active {
+  stroke: #33b1aa !important;
+  stroke-dashoffset: 0;
+
+  /* remove this or use another animation name to prevent ant line animation */
+  -webkit-animation: fsipagesbaseLinkAnimation 10000s linear 0s infinite;
+  animation: fsipagesbaseLinkAnimation 10000s linear 0s infinite;
+}
+
+.fsi-skin-example .fsi-pages-linkcontainer .fsi-pages-link.fsi-pages-link-auto-color.hover,
+.fsi-skin-example .fsi-pages-linkcontainer .fsi-pages-link.fsi-pages-link-auto-color.active {
+  vector-effect: non-scaling-stroke;
+  fill: #0096883d !important;
+}
+
