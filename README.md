@@ -16,7 +16,7 @@ This repository contains examples of how to use and build your own applications.
 ## Getting Started
 
 Without starting this project in your IDE, you can discover all the
-demos on the [Github Pages][GHPages] or develop and customise in [Stackblitz][Stackblitz].
+demos on the [GitHub Pages][GHPages] or develop and customise in [StackBlitz][StackBlitz].
 
 ## Start and develop
 
@@ -69,4 +69,4 @@ please refer to the official [documentation][Docs].
 [Browsersync]: https://browsersync.io/
 [Bootstrap]: https://getbootstrap.com/
 [GHPages]: https://neptunelabs.github.io/fsi-pages-samples/
-[Stackblitz]: https://stackblitz.com/edit/fsi-pages-samples
+[StackBlitz]: https://stackblitz.com/edit/fsi-pages-samples
