@@ -8,5 +8,4 @@ sample:
     html: 'index.html'
     js: 'script.js'
     css: 'style.css'
-playground:
-  deploy: false
+
