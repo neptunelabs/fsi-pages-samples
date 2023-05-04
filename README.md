@@ -16,7 +16,7 @@ This repository contains examples of how to use and build your own applications.
 ## Getting Started
 
 Without starting this project in your IDE, you can discover all the
-demos on the [Github Pages][GHPages] or develop and customise in [StackBlitz][StackBlitz].
+demos on the [GitHub Pages][GHPages] or develop and customise in [StackBlitz][StackBlitz].
 
 ## Start and develop
 
