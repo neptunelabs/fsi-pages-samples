@@ -8,7 +8,7 @@ to the head of your page:
 
 ```html
 <script
-  src='https://docs.neptunelabs.com/fsi/viewer/applications/pages/js/fsipages.js'
+  src='https://fsi.domain.tld/fsi/viewer/applications/pages/js/fsipages.js'
 </script>
 ```
 
