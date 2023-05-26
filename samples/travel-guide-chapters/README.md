@@ -8,7 +8,7 @@ To display catalogues with FSI Pages, simply add the following script to the hea
 
 ```html
 <script
-  src='https://docs.neptunelabs.com/fsi/viewer/applications/pages/js/fsipages.js'
+  src='https://fsi.domain.tld/fsi/viewer/applications/pages/js/fsipages.js'
 </script>
 ```
 
