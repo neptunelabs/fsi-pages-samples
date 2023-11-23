@@ -25,9 +25,9 @@
 .productContainer .btn {
   position: absolute;
   z-index: 15;
-  bottom: 2%;
+  bottom: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, -50%);
   background-color: white;
   color: #555;

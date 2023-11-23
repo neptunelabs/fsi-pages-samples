@@ -1,7 +1,7 @@
 # JS API Sample
 
-FSI Viewer contains an extensive JS API with methods and callbacks that you can use.
-You can find [an overview of all available parameters in the corresponding documentation](https://docs.neptunelabs.com/docs/fsi-viewer/js-api/public-methods).
+FSI Pages contains an extensive JS API with methods and callbacks that you can use.
+You can find [an overview of all available parameters in the corresponding documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods).
 
 This example is a simple demonstration of how to use these methods and callbacks.
 
@@ -10,12 +10,12 @@ to the top of your web page:
 
 ```html
 <script
-  src='https://fsi.domain.tld/fsi/viewer/applications/viewer/js/fsiviewer.js'
+  src='https://fsi.domain.tld/fsi/viewer/applications/pages/js/fsipages.js'
 </script>
 ```
-This will ensure that the FSI Viewer is loaded.
+This will ensure that the FSI Pages is loaded.
 
-Normally you would need to place the *<fsi-viewer>* tag in your source code where you want the viewer to be displayed.
+Normally you would need to place the *<fsi-pages>* tag in your source code where you want the viewer to be displayed.
 
 In this example, we only want to display the viewer in place of an image when a button is clicked.
 This means that the viewer is initialised by JavaScript.
@@ -23,19 +23,19 @@ This means that the viewer is initialised by JavaScript.
 To do this, we have created this part in the body:
 
 ```html
-<div class="col productContainer" id="productContainer">
-  <img id="zoomImg" src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/Shoe/View2/sneaker-both-13.jpg&width=640&height=397&effects=pad(CC,FFFFFF)" height="397" alt="">
-  <div class="zoomContainer" id="zoomEle">
+<div class="container productContainer" id="productContainer">
+  <img id="pagesImg" src="{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/pages/pages-product-thumb-sm.jpg&width=640&height=427" width="640" alt="" height="427">
+  <div class="pagesContainer" id="pagesEle">
   </div>
-  <button type="button" id="zoomBtn" class="btn btn-lg btn-outline-dark">Show Zoom</button>
+  <button type="button" id="pagesBtn" class="btn btn-lg btn-outline-dark">Show Pages</button>
 </div>
 ```
 `productContainer` is the div that contains all the elements.
-`zoomImg` is the image that will be displayed on load and replaced by the viewer.
-The `zoomEle` div will contain the FSI viewer.
-The `zoomBtn` button is used to switch from the image to the viewer.
+`pagesImg` is the image that will be displayed on load and replaced by the viewer.
+The `pagesEle` div will contain the FSI Pages.
+The `pagesBtn` button is used to switch from the image to the viewer.
 
-In the corresponding `style.css` the image and button are placed  above the viewer div with `z-index`:
+In the corresponding `style.css` the image and button are placed above the viewer div with `z-index`:
 
 ```css
 .productContainer .img {
@@ -54,33 +54,51 @@ The switch on button click is achieved via JS in the corresponding `script.js`:
 ```js
 document.addEventListener("DOMContentLoaded", function() {
 
-  document.getElementById("zoomBtn").addEventListener("click", () => {
+    let instance
 
-    const instance = new $FSI.Viewer('zoomEle',{
-      src: 'images/samples/Shoe/View2/sneaker-both-13.jpg',
-      debug: true,
-      plugins: 'resize,fullScreen',
-      skin: 'example',
-      width: '640',
-      height: '427',
-      onReady: () => {
-        hideImg()
-      },});
-    instance.start();
+    document.getElementById("pagesBtn").addEventListener("click", () => {
+
+        instance = new $FSI.Pages('pagesEle', {
+            dir: 'images/samples/pages/product',
+            debug: true,
+            skin: 'example',
+            pageLayout: 'flip',
+            listTemplate: 'catalog_list',
+            plugins: 'resize,fullScreen',
+            onReady: () => {
+                hideImg(), setTimeout(changePage(), 800);
+            }
+        });
+        instance.start();
+    });
 
     function hideImg() {
-      document.getElementById("zoomEle").style.visibility = "visible";
-      document.getElementById("zoomImg").style.display = "none";
-      document.getElementById("zoomBtn").style.display = "none";
+        document.getElementById("pagesEle").style.visibility = "visible";
+        document.getElementById("pagesImg").style.display = "none";
+        document.getElementById("pagesBtn").style.display = "none";
     }
-  });
 
+    function changePage() {
+        instance.gotoPageAndZoom(4, '0.26304,0.10011,0.94325,0.64111')
+        setTimeout(toggleIndex, 1500);
+    }
+
+    function toggleIndex() {
+        instance.togglePageIndex()
+    }
 });
 ```
 
-A click on the `zoomBtn` element will initialise a new FSI Viewer element in the `zoomEle` element.
+A click on the `pagesBtn` element will initialise a new FSI Viewer element in the `pagesEle` element.
 
-With the `onReady` callback (see [documentation](https://docs.neptunelabs.com/docs/fsi-viewer/js-api/callbacks#onready)) we ensure a smooth transition: Only when the viewer is ready will the `hideImg` function set the viewer element to visible, while the
+With the `onReady` callback (see [documentation](https://docs.neptunelabs.com/docs/fsi-viewer/js-api/callbacks#onready)) we ensure a smooth transition:
+Only when the viewer is ready will the `hideImg` function set the viewer element to visible, while the
 sets the image and button to `display:none`.
 
-It is important to use the `start()` method afterwards, as it is mandatory for the viewer initialisation (see [documentation](https://docs.neptunelabs.com/docs/fsi-viewer/js-api/public-methods#start)).
+With `onReady` we also call the function `changePage()` with a timeout: `setTimeout(changePage(), 800);`.
+
+In this function the method `instance.gotoPageAndZoom(4, '0.26304,0.10011,0.94325,0.64111')` is used (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#gotoPageAndZoom)).
+
+For demonstration purposes we also used another function with the `togglePageIndex()` method, which opens the page index (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#togglePageIndex)).
+
+It is important to use the `start()` method afterwards, as it is mandatory for the viewer initialisation (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#start)).

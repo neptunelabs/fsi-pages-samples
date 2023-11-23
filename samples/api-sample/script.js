@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
       debug: true,
       skin: 'example',
       pageLayout: 'flip',
-      listTemplate: 'image_list',
+      listTemplate: 'catalog_list',
       plugins: 'resize,fullScreen',
       onReady: () => {
-        hideImg(), setTimeout(changeZoom(), 500);
+        hideImg(), setTimeout(changePage(), 800);
       }
     });
     instance.start();
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("pagesBtn").style.display = "none";
     }
 
-    function changeZoom () {
+    function changePage () {
       instance.gotoPageAndZoom(4,'0.26304,0.10011,0.94325,0.64111')
-      setTimeout(resetZoom, 500);
+      setTimeout(toggleIndex, 1500);
     }
 
-    function resetZoom () {
-      instance.resetView()
+    function toggleIndex () {
+      instance.togglePageIndex()
     }
 
 
