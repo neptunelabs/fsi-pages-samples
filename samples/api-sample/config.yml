@@ -1,0 +1,35 @@
+overview:
+  title: API Sample
+  image: logo.png
+  description: Learn how to use the JavaScrip Pages API with a simple demo.
+  order: 98
+  facts:
+    - JS built FSI Pages
+    - JS API Demonstration
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/clothing-menu.yml
+      featured:
+        template: data/clothing-featured.yml
+      highlight: DEAL OF THE DAY
+      footer:
+        credits:
+          photos:
+            - author: Artem Bondarchuk
+              link: https://unsplash.com/@artembondarchuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/fsi-pages/
+      fsi:
+        pages: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: "index.html"
+    css: "style.css"
+    js: "script.js"
+playground:
+  deploy: true
