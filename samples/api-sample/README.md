@@ -100,8 +100,8 @@ Only when the viewer is ready will the viewer element will be set to visible, wh
 
 With `onReady` we also call the function `changePage()` with a timeout: `setTimeout(changePage(), 800);`.
 
-In this function the method `instance.gotoPageAndZoom(4, '0.26304,0.10011,0.94325,0.64111')` is used (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#gotoPageAndZoom)).
+In this function the method `instance.gotoPageAndZoom(4, '0.26304,0.10011,0.94325,0.64111')` is used (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#gotopageandzoom)).
 
-For demonstration purposes we also used another function with the `togglePageIndex()` method, which opens the page index (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#togglePageIndex)).
+For demonstration purposes we also used another function with the `togglePageIndex()` method, which opens the page index (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#togglepageindex)).
 
 It is important to use the `start()` method afterwards, as it is mandatory for the viewer initialisation (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#start)).
