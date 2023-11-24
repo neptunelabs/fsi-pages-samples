@@ -5,8 +5,7 @@ You can find [an overview of all available parameters in the corresponding docum
 
 This example is a simple demonstration of how to use these methods and callbacks.
 
-To display zoom with FSI Viewer, all you need to do is add the following script to the top of your page
-to the top of your web page:
+To display a catalog with FSI Pages, all you need to do is add the following script to the top of your web page:
 
 ```html
 <script
