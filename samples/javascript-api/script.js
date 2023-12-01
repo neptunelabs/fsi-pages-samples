@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  let instance
-
   document.getElementById("pagesBtn").addEventListener("click", () => {
 
-    instance = new $FSI.Pages('pagesEle',{
+    const show = () => {
+      document.getElementById("pagesEle").style.visibility = "visible";
+      document.getElementById("pagesImg").style.display = "none";
+      document.getElementById("pagesBtn").style.display = "none";
+      // change page and zoom after timeout
+      setTimeout(changePage(), 1000);
+    }
+
+    const instance = $FSI.createNode("fsi-pages", {
       dir: 'images/samples/pages/product',
+      width: '640px',
+      height: '427px',
       debug: true,
       skin: 'example',
       pageLayout: 'flip',
       listTemplate: 'catalog_list',
       plugins: 'resize,fullScreen',
       // listen for finished loading FSI Pages and becomes interactive
-      onReady: () => {
-        // show FSI Pages instance and hide image
-        document.getElementById("pagesEle").style.visibility = "visible";
-        document.getElementById("pagesImg").style.display = "none";
-        document.getElementById("pagesBtn").style.display = "none";
-        // change page and zoom after timeout
-        setTimeout(changePage(), 800);
-      }
+      onReady: show
     });
-    instance.start();
-  });
+
 
     function changePage () {
       // change page and zoom after timeout
@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-
+    document.getElementById('pagesEle').appendChild(instance)
+  });
 
 
 });

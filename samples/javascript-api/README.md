@@ -53,54 +53,57 @@ The switch on button click is achieved via JS in the corresponding `script.js`:
 ```js
 document.addEventListener("DOMContentLoaded", function() {
 
-  let instance
-
   document.getElementById("pagesBtn").addEventListener("click", () => {
 
-    instance = new $FSI.Pages('pagesEle',{
+    const show = () => {
+      document.getElementById("pagesEle").style.visibility = "visible";
+      document.getElementById("pagesImg").style.display = "none";
+      document.getElementById("pagesBtn").style.display = "none";
+      // change page and zoom after timeout
+      setTimeout(changePage(), 1000);
+    }
+
+    const instance = $FSI.createNode("fsi-pages", {
       dir: 'images/samples/pages/product',
+      width: '640px',
+      height: '427px',
       debug: true,
       skin: 'example',
       pageLayout: 'flip',
       listTemplate: 'catalog_list',
       plugins: 'resize,fullScreen',
       // listen for finished loading FSI Pages and becomes interactive
-      onReady: () => {
-        // show FSI Pages instance and hide image
-        document.getElementById("pagesEle").style.visibility = "visible";
-        document.getElementById("pagesImg").style.display = "none";
-        document.getElementById("pagesBtn").style.display = "none";
-        // change page and zoom after timeout
-        setTimeout(changePage(), 800);
-      }
+      onReady: show
     });
-    instance.start();
+
+
+    function changePage () {
+      // change page and zoom after timeout
+      instance.gotoPageAndZoom(4,'0.26304,0.10011,0.94325,0.64111')
+      // toggle index after timeout
+      setTimeout(toggleIndex, 1500);
+    }
+
+    function toggleIndex () {
+      // toggle page index
+      instance.togglePageIndex()
+    }
+
+
+    document.getElementById('pagesEle').appendChild(instance)
   });
 
-  function changePage () {
-    // change page and zoom after timeout
-    instance.gotoPageAndZoom(4,'0.26304,0.10011,0.94325,0.64111')
-    // toggle index after timeout
-    setTimeout(toggleIndex, 1500);
-  }
-
-  function toggleIndex () {
-    // toggle page index
-    instance.togglePageIndex()
-  }
 });
 
 ```
 
 A click on the `pagesBtn` element will initialise a new FSI Viewer element in the `pagesEle` element.
 
-With the `onReady` callback (see [documentation](https://docs.neptunelabs.com/docs/fsi-viewer/js-api/callbacks#onready)) we ensure a smooth transition:
+We create `show` which is called with the `onReady` callback (see [documentation](https://docs.neptunelabs.com/docs/fsi-viewer/js-api/callbacks#onready)). With this, we ensure a smooth transition:
 Only when the viewer is ready will the viewer element will be set to visible, while the image and button are set to `display:none`.
 
-With `onReady` we also call the function `changePage()` with a timeout: `setTimeout(changePage(), 800);`.
+With `onReady` we also call the function `changePage()` with a timeout: `setTimeout(changePage(), 1000);`.
 
 In this function the method `instance.gotoPageAndZoom(4, '0.26304,0.10011,0.94325,0.64111')` is used (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#gotopageandzoom)).
 
 For demonstration purposes we also used another function with the `togglePageIndex()` method, which opens the page index (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#togglepageindex)).
-
-It is important to use the `start()` method afterwards, as it is mandatory for the viewer initialisation (see [documentation](https://docs.neptunelabs.com/docs/fsi-pages/js-api/public-methods#start)).
