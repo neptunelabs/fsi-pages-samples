@@ -99,6 +99,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 A click on the `pagesBtn` element will initialise a new FSI Viewer element in the `pagesEle` element.
 
+The viewer itself is created with `$FSI.createNode("fsi-pages",{parameters})`.
+
 We create `show` which is called with the `onReady` callback (see [documentation](https://docs.neptunelabs.com/docs/fsi-viewer/js-api/callbacks#onready)). With this, we ensure a smooth transition:
 Only when the viewer is ready will the viewer element will be set to visible, while the image and button are set to `display:none`.
 
