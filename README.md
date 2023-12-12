@@ -5,13 +5,13 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)][License]
 
 
-FSI Pages is a JavaScript-based tool for presenting image collections as an interactive catalogue, booklet or photo album on desktop computers and mobile devices. FSI Pages automatically creates a page index with thumbnails and supports hyperlinks and interactive zooming.
+FSI Pages is a tool for presenting image collections as an interactive catalogue, booklet or photo album on desktop computers and mobile devices. FSI Pages automatically creates a page index with thumbnails and supports hyperlinks and interactive zooming.
 The real-time scaling capabilities of the image server are used to achieve pixel-perfect results.
 FSI Pages can be created and controlled as a simple HTML tag and/or via the JavaScript API.
 
 This repository contains examples of how to use and build your own applications.
 
-![Project Image](project.apng)
+[![Project Image](project.apng)][GHPages]
 
 ## Getting Started
 
