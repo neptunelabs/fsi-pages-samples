@@ -9,7 +9,7 @@ overview:
     - including chapters
 sample:
   template:
-    schema: framework-2023
+    schema: bootstrap-taupe
     components:
       menu:
         logo:
@@ -26,9 +26,4 @@ sample:
         pages: true
       bootstrap:
         icons: false
-  mapping:
-    html: 'index.html'
-    js: 'script.js'
-    css: 'style.css'
-playground:
-  deploy: true
+
