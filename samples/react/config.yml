@@ -1,0 +1,19 @@
+overview:
+  title: React Test
+  image: logo.png
+  description: Shows how FSI components can be implemented in React
+  order: 10
+  facts:
+    - Sample component
+    - FSI Component
+sample:
+  template:
+    schema: react-taupe
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      fsi:
+        pages: true
+      react: true
+      bootstrap:
+        icons: true
