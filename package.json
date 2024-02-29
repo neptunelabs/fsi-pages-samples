@@ -3,7 +3,7 @@
     "name": "NeptuneLabs GmbH",
     "url": "https://www.neptunelabs.com/"
   },
-  "version": "24.02.16",
+  "version": "24.02.29",
   "homepage": "https://www.neptunelabs.com/fsi-pages",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "npm": ">=8.0.0"
   },
   "devDependencies": {
-    "@neptunelabs/fsi-samples-framework": "file:../fsi-samples-framework",
+    "@neptunelabs/fsi-samples-framework": "^2.0.13-dev",
     "prettier": "^3.2.5"
   },
   "scripts": {

@@ -2,7 +2,7 @@ overview:
   title: JavaScript API
   image: logo.png
   description: Learn how to use the JavaScript Pages API with a simple demo.
-  order: 98
+  order: 10
   facts:
     - JS built FSI Pages
     - JS API Demonstration
