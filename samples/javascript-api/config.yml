@@ -6,24 +6,22 @@ overview:
   facts:
     - JS built FSI Pages
     - JS API Demonstration
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: bootstrap-taupe
-    components:
-      menu:
-        template: data/furniture-menu.yml
-      featured:
-        template: data/furniture-featured.yml
-      highlight: DEAL OF THE DAY
-      footer:
-        credits:
-          photos:
-            - author: Artem Bondarchuk
-              link: https://unsplash.com/@artembondarchuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-          viewer:
-            link: https://www.neptunelabs.com/fsi-pages/
-      fsi:
-        pages: true
-      bootstrap:
-        icons: true
+  menu:
+    data: furniture-menu.yml
+  featured:
+    data: furniture-featured.yml
+  highlight: DEAL OF THE DAY
+  footer:
+    credits:
+      photos:
+        - author: Artem Bondarchuk
+          link: https://unsplash.com/@artembondarchuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+      viewer:
+        link: https://www.neptunelabs.com/fsi-pages/
+fsi:
+  pages: true
+bootstrap:
+  icons: true

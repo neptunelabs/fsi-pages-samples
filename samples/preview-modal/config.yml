@@ -7,18 +7,16 @@ overview:
     - JS built FSI Pages
     - modal implementation
     - simple catalogues
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: bootstrap-taupe
-    components:
-      menu:
-        template: data/furniture-menu.yml
-      highlight: HIGHLIGHT OF THE DAY
-      featured:
-        template: data/furniture-featured.yml
-      categories: true
-      footer: true
-      fsi:
-        pages: true
-      bootstrap:
-        icons: true
+  menu:
+    data: furniture-menu.yml
+  highlight: HIGHLIGHT OF THE DAY
+  featured:
+    data: furniture-featured.yml
+  categories: true
+  footer: true
+fsi:
+  pages: true
+bootstrap:
+  icons: true

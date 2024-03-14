@@ -3,7 +3,10 @@ overview:
   image: logo.png
   description: Start your own demo
   order: 99
+schema: vanilla
 sample:
-  template:
-    schema: vanilla
+  mapping:
+    html: 'index.html'
+    js: 'script.js'
+    css: 'style.css'
 

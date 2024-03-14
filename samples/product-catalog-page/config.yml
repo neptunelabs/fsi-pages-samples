@@ -7,16 +7,14 @@ overview:
     - JS built FSI Pages
     - interactive catalog
     - including hyperlinks to articles
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: bootstrap-taupe
-    components:
-      menu:
-        template: data/furniture-menu.yml
-      featured:
-        template: data/furniture-featured.yml
-      footer: true
-      fsi:
-        pages: true
-      bootstrap:
-        icons: false
+  menu:
+    data: furniture-menu.yml
+  featured:
+    data: furniture-featured.yml
+  footer: true
+fsi:
+  pages: true
+bootstrap:
+  icons: false

@@ -7,23 +7,21 @@ overview:
     - JS built FSI Pages
     - interactive catalog
     - including chapters
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: bootstrap-taupe
-    components:
-      menu:
-        logo:
-          url: /static/assets/samples/ssi/logo-misc-gre.svg
-          height: 24
-        nav:
-          - ASIA
-          - AMERICA
-          - AFRICA
-          - PACIFIC
-          - EUROPE
-      footer: true
-      fsi:
-        pages: true
-      bootstrap:
-        icons: false
+  menu:
+    logo:
+      url: /static/assets/samples/ssi/logo-misc-gre.svg
+      height: 24
+    nav:
+      - ASIA
+      - AMERICA
+      - AFRICA
+      - PACIFIC
+      - EUROPE
+  footer: true
+fsi:
+  pages: true
+bootstrap:
+  icons: false
 
