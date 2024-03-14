@@ -28,7 +28,7 @@ sample:
           platform: Pixabay
       viewer:
         link: https://www.neptunelabs.com/fsi-thumbbar/
-fsi:
-  pages: true
-bootstrap:
-  icons: true
+  fsi:
+    pages: true
+  bootstrap:
+    icons: true

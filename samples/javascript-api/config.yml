@@ -21,7 +21,7 @@ sample:
           platform: Unsplash
       viewer:
         link: https://www.neptunelabs.com/fsi-pages/
-fsi:
-  pages: true
-bootstrap:
-  icons: true
+  fsi:
+    pages: true
+  bootstrap:
+    icons: true

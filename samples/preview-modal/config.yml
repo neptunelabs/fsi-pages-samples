@@ -16,7 +16,7 @@ sample:
     data: furniture-featured.yml
   categories: true
   footer: true
-fsi:
-  pages: true
-bootstrap:
-  icons: true
+  fsi:
+    pages: true
+  bootstrap:
+    icons: true

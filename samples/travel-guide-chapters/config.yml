@@ -20,8 +20,8 @@ sample:
       - PACIFIC
       - EUROPE
   footer: true
-fsi:
-  pages: true
-bootstrap:
-  icons: false
+  fsi:
+    pages: true
+  bootstrap:
+    icons: false
 
