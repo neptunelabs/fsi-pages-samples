@@ -1,0 +1,34 @@
+overview:
+  title: React
+  image: logo.png
+  description: Shows how FSI components can be implemented in React.
+  order: 11
+  facts:
+    - Sample component containing FSI Pages
+    - FSI Component
+schema: react-taupe
+sample:
+  menu:
+    data: furniture-menu.yml
+  hero:
+    url: /server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=1903&rect=0.01416,0.53388,0.75133,0.21963
+    height: 33vh
+    logo:
+      url: /static/assets/samples/ssi/sale.svg
+      height: 30%
+    title: Black Friday
+    description: Check out our furniture sale.
+    link: SHOP NOW
+  highlight: REACT OF THE DAY
+  footer:
+    credits:
+      photos:
+        - author: various artists
+          link: https://pixabay.com/
+          platform: Pixabay
+      viewer:
+        link: https://www.neptunelabs.com/fsi-thumbbar/
+  fsi:
+    pages: true
+  bootstrap:
+    icons: true

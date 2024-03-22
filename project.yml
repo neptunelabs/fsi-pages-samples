@@ -2,5 +2,6 @@
 title: 'FSI Pages'
 projectURL: https://www.neptunelabs.com/fsi-pages/
 originAssetPath: pages
+schema: overview-taupe
 playground:
   stackblitz: fsi-pages-samples

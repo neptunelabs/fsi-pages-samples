@@ -3,6 +3,7 @@ overview:
   image: logo.png
   description: Start your own demo
   order: 99
+schema: vanilla
 sample:
   mapping:
     html: 'index.html'

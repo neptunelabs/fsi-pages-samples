@@ -9,6 +9,7 @@ yarn.lock
 
 node_modules
 dist
+build
 .cache
 
 env.yml
